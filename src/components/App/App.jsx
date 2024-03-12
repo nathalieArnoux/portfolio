@@ -1,4 +1,5 @@
 import Header from "../Header/Header";
+import Hero from "../Hero/Hero";
 import Footer from "../Footer/Footer";
 
 const App = () => {
@@ -6,7 +7,7 @@ const App = () => {
     <div className="app bg-white">
       <Header />
       <main>
-        <p>main</p>
+        <Hero />
       </main>
       <Footer />
     </div>
