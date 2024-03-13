@@ -1,6 +1,15 @@
 import { IoDocumentText } from "react-icons/io5";
 
 const About = () => {
+  const handleDownloadResume = () => {
+    // const pdfURL = `${process.end.PUBLIC_URL}/CV_Alternance.pdf`;
+    const pdfURL = "./assets/CV_Alternance.pdf";
+    const link = document.createElement("a");
+    link.href = pdfURL;
+    link.download = "CV_Alternance";
+    link.click();
+  };
+
   return (
     <section className="py-24 bg-base-200" id="about">
       <div className="flex flex-col justify-center items-center">
@@ -49,7 +58,10 @@ const About = () => {
               earum similique praesentium optio.
             </p>
             <div className="md:max-lg:order-3 self-center lg:self-start">
-              <button className="btn btn-secondary">
+              <button
+                className="btn btn-secondary"
+                onClick={handleDownloadResume}
+              >
                 Download Resume <IoDocumentText className="w-4 h-4" />
               </button>
             </div>
