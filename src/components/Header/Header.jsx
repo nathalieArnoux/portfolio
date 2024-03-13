@@ -28,7 +28,7 @@ const Header = ({ handleScroll }) => {
             </div>
             <ul
               /* tabIndex={0} */
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
             >
               <li>
                 <button onClick={() => handleScroll("#home")}>Home</button>
@@ -55,7 +55,7 @@ const Header = ({ handleScroll }) => {
             className="btn btn-ghost text-xl"
             onClick={() => handleScroll("#home")}
           >
-            NatDev <IoCode className="h-6 w-6 mt-1" />
+            NatDev <IoCode className="mt-1 h-6 w-6" />
           </button>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -79,8 +79,8 @@ const Header = ({ handleScroll }) => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end px-2 gap-16">
-          <ul className="hidden lg:flex gap-4">
+        <div className="navbar-end gap-16 px-2">
+          <ul className="hidden gap-4 lg:flex">
             <li>
               <a
                 href="https://github.com/nathalieArnoux/"
@@ -115,7 +115,7 @@ const Header = ({ handleScroll }) => {
 
             {/* sun icon */}
             <svg
-              className="swap-on fill-current w-6 h-6"
+              className="swap-on h-6 w-6 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -124,7 +124,7 @@ const Header = ({ handleScroll }) => {
 
             {/* moon icon */}
             <svg
-              className="swap-off fill-current w-6 h-6"
+              className="swap-off h-6 w-6 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -134,16 +134,16 @@ const Header = ({ handleScroll }) => {
           {/* //? theme changer for desktop */}
           <label
             htmlFor="themeControllerDesktop"
-            className="cursor-pointer hidden md:grid place-items-center"
+            className="hidden cursor-pointer place-items-center md:grid"
           >
             <input
               id="themeControllerDesktop"
               type="checkbox"
               value="pastel"
-              className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
+              className="theme-controller toggle col-span-2 col-start-1 row-start-1 bg-base-content"
             />
             <svg
-              className="col-start-1 row-start-1 stroke-base-100 fill-base-100"
+              className="col-start-1 row-start-1 fill-base-100 stroke-base-100"
               xmlns="http://www.w3.org/2000/svg"
               width="14"
               height="14"
@@ -157,7 +157,7 @@ const Header = ({ handleScroll }) => {
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
             <svg
-              className="col-start-2 row-start-1 stroke-base-100 fill-base-100"
+              className="col-start-2 row-start-1 fill-base-100 stroke-base-100"
               xmlns="http://www.w3.org/2000/svg"
               width="14"
               height="14"

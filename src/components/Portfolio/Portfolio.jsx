@@ -4,12 +4,12 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Portfolio = () => {
   return (
-    <section className="py-24 bg-base-200" id="portfolio">
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-bold mb-2">Portfolio</h2>
-        <h3 className="text-lg italic mb-8">This is my work!</h3>
+    <section className="bg-base-200 py-24" id="portfolio">
+      <div className="flex flex-col items-center justify-center">
+        <h2 className="mb-2 text-3xl font-bold">Portfolio</h2>
+        <h3 className="mb-8 text-lg italic">This is my work!</h3>
       </div>
-      <div className="flex flex-col items-center md:flex-row md:justify-center md:items-start gap-6 px-4">
+      <div className="flex flex-col items-center gap-6 px-4 md:flex-row md:items-start md:justify-center">
         {/* //? card 1 */}
         <div className="card card-compact h-fit max-w-[440px] bg-neutral shadow-xl">
           <figure>
@@ -18,8 +18,8 @@ const Portfolio = () => {
           <div className="card-body">
             <h2 className="card-title text-2xl">
               WebStellar{" "}
-              <div className="badge badge-accent shadow-md mt-1">React</div>
-              <div className="badge badge-primary shadow-md mt-1">Symfony</div>
+              <div className="badge badge-accent mt-1 shadow-md">React</div>
+              <div className="badge badge-primary mt-1 shadow-md">Symfony</div>
             </h2>
             <details>
               <summary>Description</summary>
@@ -29,10 +29,10 @@ const Portfolio = () => {
               </p>
               <div className="divider my-0" />
               <p>
-                <span className="text-secondary italic">Scrum Master</span> and{" "}
-                <span className="text-secondary italic">CSS Lead</span>, my main
+                <span className="italic text-secondary">Scrum Master</span> and{" "}
+                <span className="italic text-secondary">CSS Lead</span>, my main
                 realization was the{" "}
-                <span className="text-secondary italic">Exploration</span> page.
+                <span className="italic text-secondary">Exploration</span> page.
               </p>
             </details>
             <div className="card-actions justify-end">
@@ -59,7 +59,7 @@ const Portfolio = () => {
           <div className="card-body">
             <h2 className="card-title text-2xl">
               LoZ Ocarina Soundboard{" "}
-              <div className="badge badge-accent shadow-md mt-1">JS</div>
+              <div className="badge badge-accent mt-1 shadow-md">JS</div>
             </h2>
             <details>
               <summary>Description</summary>
@@ -70,9 +70,9 @@ const Portfolio = () => {
               <div className="divider my-0" />
               <p>
                 Entirely built in{" "}
-                <span className="text-secondary italic">Vanilla JS</span>, this
+                <span className="italic text-secondary">Vanilla JS</span>, this
                 project allowed me to dabble in{" "}
-                <span className="text-secondary italic">CSS animations</span>.
+                <span className="italic text-secondary">CSS animations</span>.
               </p>
             </details>
             <div className="card-actions justify-end">

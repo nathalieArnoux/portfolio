@@ -2,56 +2,56 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <section className="py-24 bg-base-200" id="skills">
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-bold mb-2">Skills</h2>
-        <h3 className="text-lg italic mb-8">Learning is only the beginning</h3>
-        <div className="max-w-7xl w-full p-4 gap-4 flex flex-col md:flex-row md:justify-center">
+    <section className="bg-base-200 py-24" id="skills">
+      <div className="flex flex-col items-center justify-center">
+        <h2 className="mb-2 text-3xl font-bold">Skills</h2>
+        <h3 className="mb-8 text-lg italic">Learning is only the beginning</h3>
+        <div className="flex w-full max-w-7xl flex-col gap-4 p-4 md:flex-row md:justify-center">
           {/* //? left side */}
-          <div className="card flex-grow max-w-[440px] bg-neutral rounded-box shadow-xl">
+          <div className="card max-w-[440px] flex-grow rounded-box bg-neutral shadow-xl">
             <div className="card-body items-center">
-              <h4 className="card-title text-2xl mb-4 underline decoration-accent">
+              <h4 className="card-title mb-4 text-2xl underline decoration-accent">
                 Front-end
               </h4>
-              <ul className="grid grid-cols-2 w-max gap-4 md:gap-x-8 lg:gap-x-12">
+              <ul className="grid w-max grid-cols-2 gap-4 md:gap-x-8 lg:gap-x-12">
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-accent" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     HTML
                   </h3>
                   <p className="text-xs italic">Intermediate</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-accent" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     JavaScript
                   </h3>
                   <p className="text-xs italic">Intermediate</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-accent" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     CSS
                   </h3>
                   <p className="text-xs italic">Advanced</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-accent" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     React
                   </h3>
                   <p className="text-xs italic">Advanced</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-accent" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     TailWind
                   </h3>
                   <p className="text-xs italic">Intermediate</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-accent" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     Redux
                   </h3>
                   <p className="text-xs italic">Intermediate</p>
@@ -59,52 +59,52 @@ const Skills = () => {
               </ul>
             </div>
           </div>
-          <div className="divider md:divider-horizontal divider-secondary" />
+          <div className="divider divider-secondary md:divider-horizontal" />
           {/* //? right side */}
-          <div className="card flex-grow max-w-[440px] bg-neutral rounded-box shadow-xl">
+          <div className="card max-w-[440px] flex-grow rounded-box bg-neutral shadow-xl">
             <div className="card-body items-center">
-              <h4 className="card-title text-2xl mb-4 underline decoration-primary">
+              <h4 className="card-title mb-4 text-2xl underline decoration-primary">
                 Back-end
               </h4>
-              <ul className="grid grid-cols-2 w-max gap-4 md:gap-x-8 lg:gap-x-12">
+              <ul className="grid w-max grid-cols-2 gap-4 md:gap-x-8 lg:gap-x-12">
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-primary" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     PHP
                   </h3>
                   <p className="text-xs italic">Advanced</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-primary" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     SQL
                   </h3>
                   <p className="text-xs italic">Intermediate</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-primary" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     Symfony
                   </h3>
                   <p className="text-xs italic">Basic</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-primary" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     MySQL
                   </h3>
                   <p className="text-xs italic">Advanced</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-primary" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     Doctrine
                   </h3>
                   <p className="text-xs italic">Basic</p>
                 </li>
                 <li className="flex flex-col">
-                  <h3 className="text-xl flex gap-2">
-                    <FaCheckCircle className="mt-1.5 w-4 h-4 text-primary" />
+                  <h3 className="flex gap-2 text-xl">
+                    <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     Laravel
                   </h3>
                   <p className="text-xs italic">Basic</p>
