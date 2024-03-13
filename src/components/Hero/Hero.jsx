@@ -1,11 +1,12 @@
 import "../../animations.css";
+import PropTypes from "prop-types";
 import { FaPaperPlane } from "react-icons/fa";
 import { PiShootingStar } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoChevronForwardOutline } from "react-icons/io5";
 
-const Hero = () => {
+const Hero = ({ handleScroll }) => {
   return (
     <section className="hero min-h-[93vh] bg-base-200" id="home">
       <div className="hero-content flex-col relative lg:flex-row-reverse gap-6">
@@ -47,7 +48,10 @@ const Hero = () => {
           </p>
           <p className="mb-4">Check out my portfolio to learn more about me!</p>
           <div className="flex justify-center md:block">
-            <button className="btn btn-primary">
+            <button
+              className="btn btn-primary"
+              onClick={() => handleScroll("#contact")}
+            >
               Say Hello <FaPaperPlane />
             </button>
           </div>
@@ -76,3 +80,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+Hero.propTypes = {
+  handleScroll: PropTypes.func,
+};
