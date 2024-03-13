@@ -4,13 +4,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <section className="py-24 md:pb-40 lg:pb-52 bg-base-200" id="contact">
-      <div className="flex flex-col justify-center items-center">
-        <h2 className="text-3xl font-bold mb-2">Contact</h2>
-        <h3 className="text-lg italic mb-8">Wanna get in touch?</h3>
-        <div className="flex flex-col md:flex-row gap-4 px-4 ">
+    <section className="bg-base-200 py-24 md:pb-40 lg:pb-52" id="contact">
+      <div className="flex flex-col items-center justify-center">
+        <h2 className="mb-2 text-3xl font-bold">Contact</h2>
+        <h3 className="mb-8 text-lg italic">Wanna get in touch?</h3>
+        <div className="flex flex-col gap-4 px-4 md:flex-row ">
           {/* //? card 1 */}
-          <div className="card max-w-[440px] w-[18rem] bg-base-100 shadow-xl">
+          <div className="card w-[18rem] max-w-[440px] bg-base-100 shadow-xl">
             <div className="card-body items-center">
               <MdOutgoingMail className="h-10 w-10 text-accent" />
               <div className="flex flex-col items-center">
@@ -27,7 +27,7 @@ const Contact = () => {
             </div>
           </div>
           {/* //? card 2 */}
-          <div className="card max-w-[440px] w-[18rem] bg-base-100 shadow-xl">
+          <div className="card w-[18rem] max-w-[440px] bg-base-100 shadow-xl">
             <div className="card-body items-center">
               <FaLinkedin className="h-10 w-10 text-primary" />
               <div className="flex flex-col items-center">
