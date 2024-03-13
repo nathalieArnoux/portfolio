@@ -7,11 +7,18 @@ import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 
 const App = () => {
+  const handleScroll = (section) => {
+    const element = document.querySelector(section);
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="app bg-white">
-      <Header />
+      <Header handleScroll={handleScroll} />
       <main>
-        <Hero />
+        <Hero handleScroll={handleScroll} />
         <About />
         <Skills />
         <Portfolio />

@@ -1,15 +1,10 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import PropTypes from "prop-types";
 import { IoCode } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
-const Header = () => {
-  const handleScroll = (section) => {
-    const element = document.querySelector(section);
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+const Header = ({ handleScroll }) => {
   return (
     <header className="sticky top-0 z-50">
       <nav className="navbar bg-base-100">
@@ -184,3 +179,7 @@ const Header = () => {
 };
 
 export default Header;
+
+Header.propTypes = {
+  handleScroll: PropTypes.func,
+};
