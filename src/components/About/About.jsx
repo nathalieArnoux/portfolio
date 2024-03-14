@@ -74,17 +74,17 @@ const About = () => {
               <em className="text-primary">JavaScript</em> and its library{" "}
               <em className="text-primary">React</em>, as well as everything
               related to <em className="text-primary">CSS</em>.
-              <details className="text-base">
-                <summary className="pl-8 pt-2">
-                  Here&apos;s a <strong>fun fact</strong> about me!
-                </summary>
-                <p>
-                  I have studied a total of{" "}
-                  <em className="text-accent">six natural languages</em>! Why?
-                  Well, because <em>learning is fun!</em>
-                </p>
-              </details>
             </p>
+            <details className="text-base">
+              <summary className="pl-8">
+                Here&apos;s a <strong>fun fact</strong> about me!
+              </summary>
+              <p>
+                I have studied a total of{" "}
+                <em className="text-accent">six natural languages</em>! Why?
+                Well, because <em>learning is fun!</em>
+              </p>
+            </details>
             <div className="self-center md:max-lg:order-3 lg:self-start">
               <button
                 className="btn btn-secondary"

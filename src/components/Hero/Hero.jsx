@@ -1,4 +1,3 @@
-import "../../animations.css";
 import PropTypes from "prop-types";
 import { FaPaperPlane } from "react-icons/fa";
 import { PiShootingStar } from "react-icons/pi";
@@ -29,10 +28,7 @@ const Hero = ({ handleScroll }) => {
           </a>
         </aside>
         {/* //? profile image defined as a background to animate the box-shadox */}
-        <div
-          className="h-52 w-52 bg-profileImg bg-cover bg-center bg-no-repeat shadow-heroAnim lg:h-60 lg:w-60"
-          style={{ animation: "profile__animate 8s ease-in-out infinite 1s" }}
-        />
+        <div className="animate-profilePic h-52 w-52 bg-profileImg bg-cover bg-center bg-no-repeat shadow-heroAnim lg:h-60 lg:w-60" />
         <div className="md:max-lg:px-4 lg:max-w-[800px]">
           <h1 className="mb-3 text-5xl font-bold md:flex md:gap-3">
             Nathalie Arnoux
