@@ -1,4 +1,7 @@
 import { IoDocumentText } from "react-icons/io5";
+import { FaQuestion } from "react-icons/fa";
+import { FaHandHoldingHand } from "react-icons/fa6";
+import { FaStickyNote } from "react-icons/fa";
 
 const About = () => {
   const handleDownloadResume = () => {
@@ -17,45 +20,70 @@ const About = () => {
         <h3 className="mb-8 text-lg italic">It&apos;s short I swear</h3>
         <div className="flex max-w-7xl flex-col items-center justify-center gap-4 p-4 lg:flex-row lg:gap-8">
           {/* //? image on the left */}
-          <div className="mask mask-squircle flex h-[15rem] w-[15rem] items-center justify-center bg-accent lg:h-[21.3rem] lg:w-[21.3rem]">
-            <div className="content-left mask mask-squircle h-56 w-56 bg-profileImg bg-cover bg-center bg-no-repeat lg:h-80 lg:w-80" />
+          <div className="mask mask-squircle flex h-[15rem] w-[15rem] items-center justify-center bg-accent xl:h-[21.3rem] xl:w-[21.3rem]">
+            <div className="content-left mask mask-squircle h-56 w-56 bg-profileImg bg-cover bg-center bg-no-repeat lg:h-52 xl:h-[18.5rem] xl:w-[18.5rem]" />
           </div>
           {/* //? info on the right */}
-          <div className="content-right flex max-w-3xl flex-col gap-5 md:max-lg:px-4">
-            <div className="card-list flex flex-col items-center gap-4 md:flex-row md:max-lg:order-2 lg:flex-row">
+          <div className="content-right flex max-w-4xl flex-col gap-5 md:max-lg:px-4">
+            <div className="card-list grid grid-rows-3 items-stretch justify-stretch gap-4 md:grid-cols-3 md:grid-rows-1 md:max-lg:order-2">
               {/* //? card 1 */}
-              <div className="card max-w-xs flex-grow bg-neutral shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">Section 1</h2>
+              <div className="card bg-neutral shadow-xl">
+                <div className="card-body justify-between">
+                  <h2 className="card-title">
+                    Creative curiosity{" "}
+                    <FaQuestion className="text-lg text-primary" />
+                  </h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Learning new things is a source of inspiration and
+                    creativity, nourishment for ideas to grow.
                   </p>
                 </div>
               </div>
               {/* //? card 2 */}
-              <div className="card max-w-xs flex-grow bg-neutral shadow-xl">
+              <div className="card flex-grow bg-neutral shadow-xl">
                 <div className="card-body">
-                  <h2 className="card-title">Section 2</h2>
+                  <h2 className="card-title">
+                    Team collaboration{" "}
+                    <FaHandHoldingHand className="text-lg text-secondary" />
+                  </h2>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A tight-knit team is the dream. After all, &quot;alone we go
+                    faster but together we go further&quot;.
                   </p>
                 </div>
               </div>
               {/* //? card 3 */}
-              <div className="card max-w-xs flex-grow bg-neutral shadow-xl">
+              <div className="card flex-grow bg-neutral shadow-xl">
                 <div className="card-body">
-                  <h2 className="card-title">Section 3</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <h2 className="card-title">
+                    Planned organization{" "}
+                    <FaStickyNote className="text-lg text-accent" />
+                  </h2>
+                  <p className="flex">
+                    To-do lists are my go-to. Also planners. And sticky notes.
+                    And let&apos;s not forget about Trello~
                   </p>
                 </div>
               </div>
             </div>
-            <p className="md:max-lg:order-1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quibusdam itaque tempora veritatis error, voluptates sequi nostrum
-              suscipit nobis unde vel quaerat maiores pariatur ratione cumque
-              earum similique praesentium optio.
+            <p className="text-lg md:max-lg:order-1">
+              Hi, my name is <em className="text-primary">Nathalie</em>, and
+              I&apos;m a web developer specializing in{" "}
+              <em className="text-primary">front-end</em> development. I&apos;m
+              particularly enthusistic about{" "}
+              <em className="text-primary">JavaScript</em> and its library{" "}
+              <em className="text-primary">React</em>, as well as everything
+              related to <em className="text-primary">CSS</em>.
+              <details className="text-base">
+                <summary className="pl-8 pt-2">
+                  Here&apos;s a <strong>fun fact</strong> about me!
+                </summary>
+                <p>
+                  I have studied a total of{" "}
+                  <em className="text-accent">six natural languages</em>! Why?
+                  Well, because <em>learning is fun!</em>
+                </p>
+              </details>
             </p>
             <div className="self-center md:max-lg:order-3 lg:self-start">
               <button
