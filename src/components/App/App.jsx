@@ -5,6 +5,7 @@ import Skills from "../Skills/Skills";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
+import ScrollTopButton from "../ScrollTopButton/ScrollTopButton.jsx";
 
 const App = () => {
   const handleScroll = (section) => {
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <div className="app bg-white">
       <Header handleScroll={handleScroll} />
+      <ScrollTopButton />
       <main>
         <Hero handleScroll={handleScroll} />
         <About />
