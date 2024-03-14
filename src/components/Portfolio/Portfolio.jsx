@@ -1,5 +1,5 @@
-import WebStellar from "/assets/WebStellar.png";
-import Ocarina from "/assets/Ocarina.png";
+import WebStellar from "/assets/WebStellar.webp";
+import Ocarina from "/assets/Ocarina.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Portfolio = () => {
