@@ -33,18 +33,18 @@ const Hero = ({ handleScroll }) => {
           className="h-52 w-52 bg-profileImg bg-cover bg-center bg-no-repeat shadow-heroAnim lg:h-60 lg:w-60"
           style={{ animation: "profile__animate 8s ease-in-out infinite 1s" }}
         />
-        <div className="md:max-lg:px-4">
+        <div className="md:max-lg:px-4 lg:max-w-[800px]">
           <h1 className="mb-3 text-5xl font-bold md:flex md:gap-3">
             Nathalie Arnoux
-            <PiShootingStar className="mt-1" />
+            <PiShootingStar className="mt-1 text-accent" />
           </h1>
-          <h2 className="mb-4 flex text-3xl md:gap-3 md:pl-8">
-            <IoChevronForwardOutline className="mt-1" />
+          <h2 className="mb-4 flex text-3xl text-accent md:gap-3 md:pl-8">
+            <IoChevronForwardOutline className="mt-1 text-base-content" />
             Web Developer
           </h2>
-          <p className="mb-3 md:mb-0">
-            Front developer, space enthousiast and otter lover. I love learning
-            new things and solving problems through creative thinking.
+          <p className="mb-3 md:mb-1">
+            Space enthousiast and otter lover living in Toulouse, France. I love
+            learning new things and solving problems through creative thinking.
           </p>
           <p className="mb-4">Check out my portfolio to learn more about me!</p>
           <div className="flex justify-center md:block">
