@@ -5,11 +5,10 @@ import { FaStickyNote } from "react-icons/fa";
 
 const About = () => {
   const handleDownloadResume = () => {
-    // const pdfURL = `${process.end.PUBLIC_URL}/CV_Alternance.pdf`;
-    const pdfURL = "./assets/CV_Alternance.pdf";
+    const pdfURL = "./assets/CV-NArnoux_2024.pdf";
     const link = document.createElement("a");
     link.href = pdfURL;
-    link.download = "CV_Alternance";
+    link.download = "CV-NArnoux_2024";
     link.click();
   };
 

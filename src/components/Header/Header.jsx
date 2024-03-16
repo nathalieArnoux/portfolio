@@ -55,7 +55,7 @@ const Header = ({ handleScroll }) => {
             className="btn btn-ghost text-xl"
             onClick={() => handleScroll("#home")}
           >
-            NatDev <IoCode className="mt-1 h-6 w-6" />
+            Nathalie Arnoux <IoCode className="mt-1 h-6 w-6" />
           </button>
         </div>
         <div className="navbar-center hidden lg:flex">
