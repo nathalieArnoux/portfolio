@@ -26,7 +26,7 @@ const ScrollTopButton = () => {
 
   return (
     <div
-      className={`scroll-to-top fixed bottom-4 right-4 z-50 transition-opacity lg:bottom-8 lg:right-8 ${isButtonVisible ? "block opacity-100" : "hidden opacity-0"}`}
+      className={`scroll-to-top fixed bottom-4 right-4 z-50 transition-all lg:bottom-8 lg:right-8 ${isButtonVisible ? "opacity-100" : "invisible opacity-0"}`}
     >
       <button
         className="animate-bounce rounded-full bg-neutral"

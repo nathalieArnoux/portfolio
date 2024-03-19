@@ -28,7 +28,7 @@ const Hero = ({ handleScroll }) => {
           </a>
         </aside>
         {/* //? profile image defined as a background to animate the box-shadox */}
-        <div className="animate-profilePic h-52 w-52 bg-profileImg bg-cover bg-center bg-no-repeat shadow-heroAnim lg:h-60 lg:w-60" />
+        <div className="h-52 w-52 animate-profilePic bg-profileImg bg-cover bg-center bg-no-repeat shadow-heroAnim lg:h-60 lg:w-60" />
         <div className="md:max-lg:px-4 lg:max-w-[800px]">
           <h1 className="mb-3 text-5xl font-bold md:flex md:gap-3">
             Nathalie Arnoux
