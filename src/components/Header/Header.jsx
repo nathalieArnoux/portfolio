@@ -1,4 +1,5 @@
 import NavLinks from "./NavLinks";
+import LanguageSelector from "./LanguageSelector";
 import MobileThemeChanger from "./ThemeChangers/MobileThemeChanger";
 import DesktopThemeChanger from "./ThemeChangers/DesktopThemeChanger";
 import PropTypes from "prop-types";
@@ -9,7 +10,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 
-const Header = ({ handleScroll }) => {
+const Header = ({ selectLanguage, handleScroll }) => {
   const [isChecked, setIsChecked] = useState(false);
   const lightSound = new Audio(lightThemeSound);
   const darkSound = new Audio(darkThemeSound);
@@ -65,8 +66,9 @@ const Header = ({ handleScroll }) => {
             <NavLinks handleScroll={handleScroll} />
           </ul>
         </div>
-        {/* //? Socials links (on desktop only) */}
         <div className="navbar-end gap-16 px-2">
+          <LanguageSelector selectLanguage={selectLanguage} />
+          {/* //? Socials links (on desktop only) */}
           <ul className="hidden gap-4 lg:flex">
             <li>
               <a
@@ -100,5 +102,6 @@ const Header = ({ handleScroll }) => {
 export default Header;
 
 Header.propTypes = {
+  selectLanguage: PropTypes.func,
   handleScroll: PropTypes.func,
 };
