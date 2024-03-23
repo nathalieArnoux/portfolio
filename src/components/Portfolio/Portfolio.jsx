@@ -29,14 +29,16 @@ const Portfolio = () => {
             <img src={WebStellar} alt="Preview of WebStellar project" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl">
-              WebStellar
-              <div className="badge badge-accent mt-1 shadow-md">React</div>
-              <div className="badge badge-primary mt-1 shadow-md">Symfony</div>
-              <div className="badge-base-200 badge mt-1 italic shadow-md">
-                {completedTag}
+            <div className="flex flex-wrap items-center gap-x-3">
+              <h2 className="card-title text-2xl">WebStellar</h2>
+              <div className="mb-2 mt-1 flex gap-2 lg:mt-2">
+                <div className="badge badge-accent shadow-md">React</div>
+                <div className="badge badge-primary shadow-md">Symfony</div>
+                <div className="badge-base-200 badge italic shadow-md">
+                  {completedTag}
+                </div>
               </div>
-            </h2>
+            </div>
             <details>
               <summary>{description}</summary>
               <p className="mt-3">{webstellarDescr}</p>
@@ -70,13 +72,15 @@ const Portfolio = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl">
-              LoZ Ocarina Soundboard
-              <div className="badge badge-accent mt-1 shadow-md">JS</div>
-              <div className="badge-base-200 badge mt-1 italic shadow-md">
-                {wipTag}
+            <div className="flex flex-wrap items-center gap-x-3">
+              <h2 className="card-title text-2xl">LoZ Ocarina Soundboard</h2>
+              <div className="mb-2 mt-1 flex gap-2 lg:mt-2">
+                <div className="badge badge-accent shadow-md">JS</div>
+                <div className="badge-base-200 badge italic shadow-md">
+                  {wipTag}
+                </div>
               </div>
-            </h2>
+            </div>
             <details>
               <summary>Description</summary>
               <p className="mt-3">{zeldaDescr}</p>
