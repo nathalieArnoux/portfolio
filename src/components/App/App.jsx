@@ -17,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div className="app bg-white">
+    <div className="app bg-base-100">
       <Header handleScroll={handleScroll} />
       <ScrollTopButton />
       <main>

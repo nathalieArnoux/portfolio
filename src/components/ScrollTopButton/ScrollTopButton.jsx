@@ -14,7 +14,7 @@ const ScrollTopButton = () => {
   useEffect(() => {
     //? handle state of button visibility
     const handleScrollButtonVisibility = () => {
-      window.scrollY > 300 ? setButtonVisible(true) : setButtonVisible(false);
+      window.scrollY > 100 ? setButtonVisible(true) : setButtonVisible(false);
     };
     //? add event listener
     window.addEventListener("scroll", handleScrollButtonVisibility);
@@ -26,7 +26,7 @@ const ScrollTopButton = () => {
 
   return (
     <div
-      className={`scroll-to-top fixed bottom-4 right-4 z-50 transition-all lg:bottom-8 lg:right-8 ${isButtonVisible ? "opacity-100" : "invisible opacity-0"}`}
+      className={`scroll-to-top fixed bottom-4 right-4 z-50 transition-all md:bottom-24 md:right-10 ${isButtonVisible ? "opacity-100" : "invisible opacity-0"}`}
     >
       <button
         className="animate-bounce rounded-full bg-neutral"
