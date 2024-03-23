@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer";
 import ScrollTopButton from "../ScrollTopButton/ScrollTopButton.jsx";
 
 const App = () => {
+  // navigation scrolling
   const handleScroll = (section) => {
     const element = document.querySelector(section);
     element.scrollIntoView({
