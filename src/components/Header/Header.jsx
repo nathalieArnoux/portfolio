@@ -53,7 +53,7 @@ const Header = ({ handleScroll }) => {
           </div>
           {/* //? Site logo */}
           <button
-            className="btn btn-ghost p-0 text-xl"
+            className="btn btn-ghost p-0 text-xl lg:px-4"
             onClick={() => handleScroll("#home")}
           >
             Nathalie Arnoux <IoCode className="mt-1 h-6 w-6" />
