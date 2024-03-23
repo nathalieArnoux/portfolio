@@ -1,12 +1,12 @@
 import NavLinks from "./NavLinks";
+import LanguageSelector from "./LanguageSelector";
 import MobileThemeChanger from "./ThemeChangers/MobileThemeChanger";
 import DesktopThemeChanger from "./ThemeChangers/DesktopThemeChanger";
 import PropTypes from "prop-types";
 import lightThemeSound from "/assets/light-theme.mp3";
 import darkThemeSound from "/assets/dark-theme.mp3";
-import { IoCode } from "react-icons/io5";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { IoCode, IoLanguage } from "react-icons/io5";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useState } from "react";
 
 const Header = ({ handleScroll }) => {
@@ -25,7 +25,7 @@ const Header = ({ handleScroll }) => {
     <header className="sticky top-0 z-50">
       <nav className="navbar bg-base-100">
         <div className="navbar-start">
-          {/* //? Dropdown menu on mobile */}
+          {/* //? Dropdown menu (mobile) */}
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -43,7 +43,7 @@ const Header = ({ handleScroll }) => {
                 />
               </svg>
             </div>
-            {/* //? Navlinks on mobile */}
+            {/* //? Navlinks (mobile) */}
             <ul
               /* tabIndex={0} */
               className="menu dropdown-content menu-sm z-[1] mt-2 w-52 rounded-box bg-base-100 p-2 shadow"
@@ -53,21 +53,21 @@ const Header = ({ handleScroll }) => {
           </div>
           {/* //? Site logo */}
           <button
-            className="btn btn-ghost text-xl"
+            className="btn btn-ghost p-0 text-xl lg:px-4"
             onClick={() => handleScroll("#home")}
           >
             Nathalie Arnoux <IoCode className="mt-1 h-6 w-6" />
           </button>
         </div>
-        {/* //? Navlinks on desktop */}
+        {/* //? Navlinks (desktop) */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <NavLinks handleScroll={handleScroll} />
           </ul>
         </div>
-        {/* //? Socials links (on desktop only) */}
-        <div className="navbar-end gap-16 px-2">
-          <ul className="hidden gap-4 lg:flex">
+        <div className="navbar-end gap-2 md:gap-6 md:px-2">
+          {/* //? Socials links (desktop) */}
+          <ul className="hidden gap-4 md:flex">
             <li>
               <a
                 href="https://github.com/nathalieArnoux/"
@@ -87,9 +87,24 @@ const Header = ({ handleScroll }) => {
               </a>
             </li>
           </ul>
-          {/* //? theme changer for mobiles */}
+          {/* //? Translation dropdown */}
+          <div>
+            <div className="dropdown dropdown-end">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost px-0 md:px-4"
+              >
+                <IoLanguage className="h-6 w-6" />
+              </div>
+              <ul className="menu dropdown-content menu-sm z-[1] mt-2 w-fit rounded-box bg-base-100 shadow">
+                <LanguageSelector />
+              </ul>
+            </div>
+          </div>
+          {/* //? theme changer (mobiles) */}
           <MobileThemeChanger playThemeSound={playThemeSound} />
-          {/* //? theme changer for desktop */}
+          {/* //? theme changer (desktop) */}
           <DesktopThemeChanger playThemeSound={playThemeSound} />
         </div>
       </nav>

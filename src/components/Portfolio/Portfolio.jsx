@@ -1,13 +1,26 @@
+import { useTranslation, Trans } from "react-i18next";
 import WebStellar from "/assets/WebStellar.webp";
 import Ocarina from "/assets/Ocarina.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
+  const {
+    title,
+    subtitle,
+    completedTag,
+    wipTag,
+    description,
+    visitButton,
+    webstellarDescr,
+    zeldaDescr,
+  } = t("portfolio");
+
   return (
     <section className="bg-base-200 py-24" id="portfolio">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="mb-2 text-3xl font-bold">Portfolio</h2>
-        <h3 className="mb-8 text-lg italic">This is my work!</h3>
+        <h2 className="mb-2 text-3xl font-bold">{title}</h2>
+        <h3 className="mb-8 text-lg italic">{subtitle}</h3>
       </div>
       <div className="flex flex-col items-center gap-6 px-4 md:flex-row md:items-start md:justify-center">
         {/* //? card 1 */}
@@ -16,23 +29,25 @@ const Portfolio = () => {
             <img src={WebStellar} alt="Preview of WebStellar project" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl">
-              WebStellar{" "}
-              <div className="badge badge-accent mt-1 shadow-md">React</div>
-              <div className="badge badge-primary mt-1 shadow-md">Symfony</div>
-            </h2>
+            <div className="flex flex-wrap items-center gap-x-3">
+              <h2 className="card-title text-2xl">WebStellar</h2>
+              <div className="mb-2 mt-1 flex gap-2 lg:mt-2">
+                <div className="badge badge-accent shadow-md">React</div>
+                <div className="badge badge-primary shadow-md">Symfony</div>
+                <div className="badge-base-200 badge italic shadow-md">
+                  {completedTag}
+                </div>
+              </div>
+            </div>
             <details>
-              <summary>Description</summary>
-              <p className="mt-3">
-                Astronomy website realized in a group of five, final project of
-                my training program.
-              </p>
+              <summary>{description}</summary>
+              <p className="mt-3">{webstellarDescr}</p>
               <div className="divider my-0" />
               <p>
-                <span className="italic text-secondary">Scrum Master</span> and{" "}
-                <span className="italic text-secondary">CSS Lead</span>, my main
-                realization was the{" "}
-                <span className="italic text-secondary">Exploration</span> page.
+                <Trans
+                  i18nKey={"portfolio.webstellarWork"}
+                  components={{ 1: <em className="italic text-secondary" /> }}
+                />
               </p>
             </details>
             <div className="card-actions justify-end">
@@ -42,7 +57,7 @@ const Portfolio = () => {
                 rel="noopener noreferrer"
               >
                 <button className="btn btn-secondary">
-                  Visit project <FaArrowRightLong />
+                  {visitButton} <FaArrowRightLong />
                 </button>
               </a>
             </div>
@@ -57,22 +72,24 @@ const Portfolio = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl">
-              LoZ Ocarina Soundboard{" "}
-              <div className="badge badge-accent mt-1 shadow-md">JS</div>
-            </h2>
+            <div className="flex flex-wrap items-center gap-x-3">
+              <h2 className="card-title text-2xl">LoZ Ocarina Soundboard</h2>
+              <div className="mb-2 mt-1 flex gap-2 lg:mt-2">
+                <div className="badge badge-accent shadow-md">JS</div>
+                <div className="badge-base-200 badge italic shadow-md">
+                  {wipTag}
+                </div>
+              </div>
+            </div>
             <details>
               <summary>Description</summary>
-              <p className="mt-3">
-                A fun school project customized into a Legend of Zelda ocarina
-                player, with working sounds and animations.
-              </p>
+              <p className="mt-3">{zeldaDescr}</p>
               <div className="divider my-0" />
               <p>
-                Entirely built in{" "}
-                <span className="italic text-secondary">Vanilla JS</span>, this
-                project allowed me to dabble in{" "}
-                <span className="italic text-secondary">CSS animations</span>.
+                <Trans
+                  i18nKey={"portfolio.zeldaWork"}
+                  components={{ 1: <em className="italic text-secondary" /> }}
+                />
               </p>
             </details>
             <div className="card-actions justify-end">
@@ -82,7 +99,7 @@ const Portfolio = () => {
                 rel="noopener noreferrer"
               >
                 <button className="btn btn-secondary">
-                  Visit project <FaArrowRightLong />
+                  {visitButton} <FaArrowRightLong />
                 </button>
               </a>
             </div>

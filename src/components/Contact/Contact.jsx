@@ -1,13 +1,17 @@
+import { useTranslation } from "react-i18next";
 import { MdOutgoingMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Contact = () => {
+  const { t } = useTranslation();
+  const { title, subtitle, emailButton, linkedinButton } = t("contact");
+
   return (
     <section className="bg-base-200 py-24 md:pb-40 lg:pb-52" id="contact">
       <div className="flex flex-col items-center justify-center">
-        <h2 className="mb-2 text-3xl font-bold">Contact</h2>
-        <h3 className="mb-8 text-lg italic">Wanna get in touch?</h3>
+        <h2 className="mb-2 text-3xl font-bold">{title}</h2>
+        <h3 className="mb-8 text-lg italic">{subtitle}</h3>
         <div className="flex flex-col gap-4 px-4 md:flex-row ">
           {/* //? card 1 */}
           <div className="card w-[18rem] max-w-[440px] bg-base-100 shadow-xl">
@@ -20,7 +24,7 @@ const Contact = () => {
               <div className="card-actions mt-6 justify-center">
                 <a href="mailto:arnouxn@gmail.com">
                   <button className="btn btn-accent">
-                    Send email <FaArrowRightLong />
+                    {emailButton} <FaArrowRightLong />
                   </button>
                 </a>
               </div>
@@ -41,7 +45,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                 >
                   <button className="btn btn-primary">
-                    Send message <FaArrowRightLong />
+                    {linkedinButton} <FaArrowRightLong />
                   </button>
                 </a>
               </div>

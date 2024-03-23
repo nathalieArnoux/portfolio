@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "job": "Web Developer",
+    "hero1": "Space enthusiast and otter lover living in Toulouse, France. I love learning new things and solving problems through creative thinking.",
+    "hero2": "Check out my portfolio to learn more about me!",
+    "heroButton": "Say Hello"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "It's short I swear",
+    "box1Title": "Creative curiosity",
+    "box1Content": "Learning new things is a source of inspiration and creativity, nourishment for ideas to grow.",
+    "box2Title": "Team collaboration",
+    "box2Content": "A tight-knit team is the dream. After all, 'alone we go faster but together we go further'",
+    "box3Title": "Planned organization",
+    "box3Content": "To-do lists are my go-to. Also planners. And sticky notes. And let's not forget about Trello~",
+    "description": "Hi, my name is <1>Nathalie</1>, and I'm a web developer specializing in <1>front-end</1> development. I'm particularly enthusiastic about <1>JavaScript</1> and its library <1>React</1>, as well as everything related to <1>CSS</1>.",
+    "factTitle": "Here's a <1>fun fact</1> about me!",
+    "factContent": "I have studied a total of <1>six natural languages</1>! Why? Well, because <2>learning is fun</2>!",
+    "downloadCVButton": "Download Resume"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Learning is only the beginning",
+    "lvl1": "Basic",
+    "lvl2": "Intermediate",
+    "lvl3": "Advanced"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "This is my work!",
+    "completedTag": "Completed",
+    "wipTag": "WIP",
+    "description": "Description",
+    "visitButton": "Visit project",
+    "webstellarDescr": "Astronomy website realized in a group of five, final project of my training program.",
+    "webstellarWork": "<1>Scrum Master</1> and <1>CSS Lead</1>, my main realization was the <1>Exploration</1> page, the centerpiece of the project.",
+    "zeldaDescr": "A fun little school project that I customized into a Legend of Zelda ocarina player, with working sounds and animations. I have a plethora of ideas, I just need to find the time!",
+    "zeldaWork": "Entirely built in <1>Vanilla JS</1>, this project allowed me to discover and dabble in <1>CSS animations</1>. Not responsive (yet!)."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Wanna get in touch?",
+    "emailButton": "Send email",
+    "linkedinButton": "Send message"
+  }
+}

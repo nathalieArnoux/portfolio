@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer";
 import ScrollTopButton from "../ScrollTopButton/ScrollTopButton.jsx";
 
 const App = () => {
+  // navigation scrolling
   const handleScroll = (section) => {
     const element = document.querySelector(section);
     element.scrollIntoView({
@@ -16,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div className="app bg-white">
+    <div className="app bg-base-100">
       <Header handleScroll={handleScroll} />
       <ScrollTopButton />
       <main>
