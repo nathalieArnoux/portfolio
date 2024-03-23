@@ -1,11 +1,15 @@
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 import { FaPaperPlane } from "react-icons/fa";
 import { PiShootingStar } from "react-icons/pi";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoChevronForwardOutline } from "react-icons/io5";
 
-const Hero = ({ getTranslation, handleScroll }) => {
+const Hero = ({ handleScroll }) => {
+  const { t } = useTranslation();
+  const { job, hero1, hero2, heroButton } = t("hero");
+
   return (
     <section className="hero min-h-[93vh] bg-base-200" id="home">
       <div className="hero-content relative flex-col gap-6 lg:flex-row-reverse">
@@ -36,16 +40,16 @@ const Hero = ({ getTranslation, handleScroll }) => {
           </h1>
           <h2 className="mb-4 flex text-3xl text-accent md:gap-3 md:pl-8">
             <IoChevronForwardOutline className="mt-1 text-base-content" />
-            {getTranslation("job")}
+            {job}
           </h2>
-          <p className="mb-3 md:mb-1">{getTranslation("hero1")}</p>
-          <p className="mb-4">{getTranslation("hero2")}</p>
+          <p className="mb-3 md:mb-1">{hero1}</p>
+          <p className="mb-4">{hero2}</p>
           <div className="flex justify-center md:block">
             <button
               className="btn btn-primary"
               onClick={() => handleScroll("#contact")}
             >
-              {getTranslation("heroButton")} <FaPaperPlane />
+              {heroButton} <FaPaperPlane />
             </button>
           </div>
         </div>
@@ -75,6 +79,5 @@ const Hero = ({ getTranslation, handleScroll }) => {
 export default Hero;
 
 Hero.propTypes = {
-  getTranslation: PropTypes.func,
   handleScroll: PropTypes.func,
 };

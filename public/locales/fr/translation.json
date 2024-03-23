@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "job": "Développeuse Web",
+    "hero1": "Passionnée de l'espace et amoureuse des loutres vivant à Toulouse. J'aime apprendre de nouvelles choses et résoudre les problèmes de manière créative.",
+    "hero2": "N'hésite pas à parcourir mon portfolio pour en apprendre plus sur moi !",
+    "heroButton": "Passer le bonjour"
+  },
+  "about": {
+    "title": "Introduction",
+    "subtitle": "Elle est courte, promis !",
+    "box1Title": "Curiosité créative",
+    "box1Content": "Apprendre de nouvelles choses est une source d'inspiration et de créativité, qui nourrit de nouvelles idées.",
+    "box2Title": "Esprit d'équipe",
+    "box2Content": "Une équipe soudée, c'est le rêve. Après tout, 'seul on va plus vite, ensemble on va plus loin'.",
+    "box3Title": "Méthode organisée",
+    "box3Content": "Vive Trello les to-do lists. Et les post-its. J'ai peut-être un peu tendance à en mettre partout, d'ailleurs.",
+    "description": "Salut, moi c'est <1>Nathalie</1>, et je suis développeuse web spécialisée <1>front-end</1>. J'adore <1>JavaScript</1> et sa bibliothèque <1>React</1>, ainsi que tout ce qui a trait au <1>CSS</1>.",
+    "factTitle": "Un <1>truc amusant</1> sur moi !",
+    "factContent": "J'ai étudié un total de <1>six langues naturelles</1>! Pourquoi ? Parce qu'<2>apprendre c'est fun</2> !",
+    "downloadCVButton": "Télécharger mon CV"
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Apprendre n'est que le début de l'aventure",
+    "lvl1": "Basique",
+    "lvl2": "Intermédiaire",
+    "lvl3": "Avancé"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Voici mes créations!",
+    "completedTag": "Terminé",
+    "wipTag": "En cours",
+    "description": "Description",
+    "visitButton": "Voir le projet",
+    "webstellarDescr": "Un site sur l'astronomie créé en groupe de 5. C'est le projet final de ma formation.",
+    "webstellarWork": "Élue <1>Scrum Master</1> et <1>Lead CSS</1>, j'ai réalisé l'intégralité de la page <1>Exploration</1>, le pilier central du projet.",
+    "zeldaDescr": "Petit projet sympa fait durant ma formation, un ocarina de Legend of Zelda avec musique et animation. En pause, mais j'ai une pléthore d'idées, il faut juste que je trouve le temps !",
+    "zeldaWork": "Entièrement construit en <1>Vanilla JS</1>, ce projet m'a permis de découvrir et de m'initier aux <1>animations CSS</1>."
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "Ravie de faire ta connaissance !",
+    "emailButton": "Envoyer un email",
+    "linkedinButton": "Envoyer un message"
+  }
+}
