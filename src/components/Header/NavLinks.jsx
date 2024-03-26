@@ -1,13 +1,15 @@
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 import { sectionList } from "../../data";
 
 const NavLinks = ({ handleScroll }) => {
+  const { t } = useTranslation();
+
   return sectionList.map((section) => {
-    const sectionName = section.charAt(0).toUpperCase() + section.slice(1);
     return (
       <li key={section}>
         <button onClick={() => handleScroll(`#${section}`)}>
-          {sectionName}
+          {t(`${section}.title`)}
         </button>
       </li>
     );
