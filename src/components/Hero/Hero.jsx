@@ -11,7 +11,7 @@ const Hero = ({ handleScroll }) => {
   const { job, hero1, hero2, heroButton } = t("hero");
 
   return (
-    <section className="hero min-h-[93vh] bg-base-200" id="home">
+    <section className="hero min-h-[93vh] bg-base-200" id="hero">
       <div className="hero-content relative flex-col gap-6 lg:flex-row-reverse">
         <aside className="absolute left-0 top-14 flex flex-col lg:hidden">
           <a
