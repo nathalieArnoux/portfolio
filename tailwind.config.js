@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        profileImg: "url(/assets/Me.webp)",
+        heroImg: "url(/assets/Me2.webp)",
+        profileImg: "url(/assets/Me1.webp)",
       },
       boxShadow: {
         heroAnim: 'inset 0 0 0 9px theme("colors.primary")',
