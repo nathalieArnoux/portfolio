@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const Skills = () => {
   const { t } = useTranslation();
-  const { title, subtitle, lvl1, lvl2, lvl3 } = t("skills");
+  const { title, subtitle } = t("skills");
 
   return (
     <section className="bg-base-200 py-24" id="skills">
@@ -23,42 +23,36 @@ const Skills = () => {
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     HTML
                   </h3>
-                  <p className="text-xs italic">{lvl2}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     JavaScript
                   </h3>
-                  <p className="text-xs italic">{lvl2}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     CSS
                   </h3>
-                  <p className="text-xs italic">{lvl3}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     React
                   </h3>
-                  <p className="text-xs italic">{lvl3}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     TailWind
                   </h3>
-                  <p className="text-xs italic">{lvl2}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-accent" />
                     Redux
                   </h3>
-                  <p className="text-xs italic">{lvl2}</p>
                 </li>
               </ul>
             </div>
@@ -76,42 +70,36 @@ const Skills = () => {
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     PHP
                   </h3>
-                  <p className="text-xs italic">{lvl2}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     SQL
                   </h3>
-                  <p className="text-xs italic">{lvl2}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     Symfony
                   </h3>
-                  <p className="text-xs italic">{lvl1}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     MySQL
                   </h3>
-                  <p className="text-xs italic">{lvl2}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     Doctrine
                   </h3>
-                  <p className="text-xs italic">{lvl1}</p>
                 </li>
                 <li className="flex flex-col">
                   <h3 className="flex gap-2 text-xl">
                     <FaCheckCircle className="mt-1.5 h-4 w-4 text-primary" />
                     Laravel
                   </h3>
-                  <p className="text-xs italic">{lvl1}</p>
                 </li>
               </ul>
             </div>
