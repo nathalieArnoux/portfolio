@@ -8,7 +8,7 @@ const Footer = () => {
       <aside className="grid-flow-col items-center">
         <PiShootingStar className="h-12 w-12" />
         <div className="flex-col">
-          <p className="text-xs">© 2020-present Nathalie Arnoux.</p>
+          <p className="text-xs">© 2024-present Nathalie Arnoux.</p>
           <p className="text-xs">All Rights Reserved.</p>
         </div>
       </aside>

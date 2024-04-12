@@ -22,10 +22,7 @@
   },
   "skills": {
     "title": "Compétences",
-    "subtitle": "Apprendre n'est que le début de l'aventure",
-    "lvl1": "Basique",
-    "lvl2": "Intermédiaire",
-    "lvl3": "Avancé"
+    "subtitle": "Apprendre n'est que le début de l'aventure"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -37,7 +34,9 @@
     "webstellarDescr": "Un site sur l'astronomie créé en groupe de 5. C'est le projet final de ma formation.",
     "webstellarWork": "Élue <1>Scrum Master</1> et <1>Lead CSS</1>, j'ai réalisé l'intégralité de la page <1>Exploration</1>, le pilier central du projet.",
     "zeldaDescr": "Petit projet sympa fait durant ma formation, un ocarina de Legend of Zelda avec musique et animation. En pause, mais j'ai une pléthore d'idées, il faut juste que je trouve le temps !",
-    "zeldaWork": "Entièrement construit en <1>Vanilla JS</1>, ce projet m'a permis de découvrir et de m'initier aux <1>animations CSS</1>."
+    "zeldaWork": "Entièrement construit en <1>Vanilla JS</1>, ce projet m'a permis de découvrir et de m'initier aux <1>animations CSS</1>.",
+    "pokedexDescr": "Un Pokédex des formes shiny des pokémons, pour t'aider à faire ton choix avant d'aller shasser.",
+    "pokedexWork": "À l'origine un projet d'école codé en full PHP et données issues d'une BDDR, je l'ai refait en full HTML / CSS / Vanilla JS pour travailler sur le routing et la consommation d'API avec JS."
   },
   "contact": {
     "title": "Me contacter",

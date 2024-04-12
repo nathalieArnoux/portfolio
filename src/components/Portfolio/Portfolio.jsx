@@ -1,6 +1,7 @@
 import { useTranslation, Trans } from "react-i18next";
 import WebStellar from "/assets/WebStellar.webp";
 import Ocarina from "/assets/Ocarina.webp";
+import Pokedex from "/assets/Pokedex.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Portfolio = () => {
@@ -14,6 +15,7 @@ const Portfolio = () => {
     visitButton,
     webstellarDescr,
     zeldaDescr,
+    pokedexDescr,
   } = t("portfolio");
 
   return (
@@ -95,6 +97,46 @@ const Portfolio = () => {
             <div className="card-actions justify-end">
               <a
                 href="https://natdev-soundboard.surge.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn btn-secondary">
+                  {visitButton} <FaArrowRightLong />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* //? card 3 */}
+        <div className="card card-compact h-fit max-w-[440px] bg-neutral shadow-xl">
+          <figure>
+            <img src={Pokedex} alt="Preview of Shiny Pokedex project" />
+          </figure>
+          <div className="card-body">
+            <div className="flex flex-wrap items-center gap-x-3">
+              <h2 className="card-title text-2xl">Shiny Pokedex</h2>
+              <div className="mb-2 mt-1 flex gap-2 lg:mt-2">
+                <div className="badge badge-accent shadow-md">JS</div>
+                <div className="badge badge-accent shadow-md">API</div>
+                <div className="badge-base-200 badge italic shadow-md">
+                  {wipTag}
+                </div>
+              </div>
+            </div>
+            <details>
+              <summary>Description</summary>
+              <p className="mt-3">{pokedexDescr}</p>
+              <div className="divider my-0" />
+              <p>
+                <Trans
+                  i18nKey={"portfolio.pokedexWork"}
+                  components={{ 1: <em className="italic text-secondary" /> }}
+                />
+              </p>
+            </details>
+            <div className="card-actions justify-end">
+              <a
+                href="https://nathaliearnoux.github.io/pokedex/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

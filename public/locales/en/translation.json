@@ -22,10 +22,7 @@
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Learning is only the beginning",
-    "lvl1": "Basic",
-    "lvl2": "Intermediate",
-    "lvl3": "Advanced"
+    "subtitle": "Learning is only the beginning"
   },
   "portfolio": {
     "title": "Portfolio",
@@ -37,7 +34,9 @@
     "webstellarDescr": "Astronomy website realized in a group of five, final project of my training program.",
     "webstellarWork": "<1>Scrum Master</1> and <1>CSS Lead</1>, my main realization was the <1>Exploration</1> page, the centerpiece of the project.",
     "zeldaDescr": "A fun little school project that I customized into a Legend of Zelda ocarina player, with working sounds and animations. I have a plethora of ideas, I just need to find the time!",
-    "zeldaWork": "Entirely built in <1>Vanilla JS</1>, this project allowed me to discover and dabble in <1>CSS animations</1>. Not responsive (yet!)."
+    "zeldaWork": "Entirely built in <1>Vanilla JS</1>, this project allowed me to discover and dabble in <1>CSS animations</1>. Not responsive (yet!).",
+    "pokedexDescr": "A Pokedex showing the shiny forms of pokemon, to help you decide on your next shiny hunt.",
+    "pokedexWork": "Originally a school project in PHP and data from a SQL database, I revamped it into a HTML / CSS / Vanilla JS project to work on <1>routing</1>, and fetching data from an <1>API</1>."
   },
   "contact": {
     "title": "Contact",
